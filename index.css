@@ -1,0 +1,235 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color:  hsl(207, 26%, 17%) ;
+  color:  hsl(0, 0%, 98%);
+}
+.slogan {
+  width: 100%;
+  height: 5rem;
+  background-color: hsl(209, 23%, 22%);
+  display: flex;
+  color: hsl(0, 0%, 98%);
+  align-items: center;
+}
+
+.slogan h1  {
+  width: 60%;
+  margin-left: 8%;
+  margin-right: 3%;
+  font-weight: lighter;
+  font-size: 2rem;
+}
+
+
+.slogan button {
+  color: #fff;
+  background-color: hsl(209, 23%, 22%);
+  border: none;
+  width: 21.4%;
+  height: 50%;
+  font-size: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly; 
+  margin-right: 8%;
+}
+.input{
+  width: 100%;
+  height: 5.5rem;
+  background-color: hsl(207, 26%, 17%);
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 3%;
+}
+
+.input-con {
+  width: 40%;
+  height: 58%;
+  margin: auto;
+  margin-left: 8%;
+}
+
+.input-con input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: hsl(209, 23%, 22%);
+  color: hsl(0, 0%, 100%);
+  font-size: .78rem;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.dropdown {
+    width: 18%;
+    height: 58%;
+    margin: auto;
+    margin-left: 5%;
+    margin-right: 8%;
+}
+
+.dropdown .btn-nyt {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: hsl(209, 23%, 22%);
+    color: hsl(0, 0%, 98%);
+    border-radius: 10px;
+    text-align: center;
+    font-size: .7rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.dropdown-menu{
+  position: absolute;
+    width: 18%;
+    height: 11rem;
+    background-color: hsl(209, 23%, 22%);
+    color: hsl(0, 0%, 98%);
+    border-radius:0 0 10px 10px;
+    font-size: 1rem;
+    font-weight: lighter;
+    margin: 1.8% auto; 
+    display:none;
+    margin-right: 20%;
+}
+
+.dropdown-menu p{
+  margin: 10px auto;
+    width: 80%;
+    height: 11%;
+    list-style-type:none;
+    border-bottom: 1px solid hsl(0, 0%, 98%);
+    cursor: pointer;
+}
+.dropdown-menu p:hover{
+  background-color: hsl(0, 0%, 98%);
+  color: hsl(209, 23%, 22%);
+}
+
+
+
+.countries{
+  width: 85%;
+  margin:auto;
+  display: grid;
+  grid-template-columns: 
+  repeat(auto-fit, minmax(300px, 1fr));
+  
+}
+.countryModel{
+  width: 85%;
+  margin:auto;
+}
+.mode{
+  float: left;
+}
+.country{
+  
+  border-radius: 5px;
+  width:18rem;
+  height:23.5rem;
+  margin:25px auto;
+  background-color:hsl(209, 23%, 22%);
+}
+.country:hover{
+  transform:scale(1.1);
+}
+.country-img{
+  width:100%;
+  height:50%;
+  
+}
+.country-img .flag{
+  width:100%;
+  height:100%;
+  border-radius: 5px 5px 0 0;
+}
+.country-info {
+width:90%;
+margin: 0 auto;
+}
+.country-info h1{
+  cursor: pointer;
+  text-align: center;
+  font-size:1.3rem;
+  width:100%;
+}
+.country-info p {
+  font-size: 1.1rem;
+}
+
+
+/* country page */
+
+.country-page{
+  width:80%;
+  margin: 0 auto;
+  display:flex;
+  flex-direction:column;
+}
+.btn-con{
+  width:100%;
+  height:6vh;
+  margin-bottom:8vh;
+}
+.btn-con button{
+  width:10%;
+  height:100%;
+  border:none;
+  background-color:hsl(209, 23%, 22%);
+  color:hsl(0, 0%, 98%);
+  border-radius:5px;
+  cursor:pointer;
+  display:flex;
+  align-items:center;
+  justify-content:space-evenly; 
+}
+.btn-con button:hover{
+  background-color:hsl(0, 0%, 98%);
+  color:hsl(209, 23%, 22%);
+}
+.main{
+  display:flex;
+  flex-direction:row;
+}
+.flag{
+  width:55%;
+  height: 100%;
+  margin:auto;
+}
+.flag img{
+  width:100%;
+  height:100%;
+}
+.country-info-card{
+  width:45%;
+  margin-left: 8vw;
+}
+.country-info-main{
+  width:100%;
+  height: 100%;
+  display:flex;
+  flex-direction:row;
+}
+.country-info-main-sub-left{
+  width:50%;
+  height:100%;
+  display:flex;
+  flex-direction:column;
+}
+.country-info-main-sub-right{
+  width:50%;
+  height:100%;
+  display:flex;
+  flex-direction:column;
+}
+.country-info-main-sub-right p , .country-info-main-sub-left p{
+  margin:8px
+}
+.show{
+  display:none;
+}
